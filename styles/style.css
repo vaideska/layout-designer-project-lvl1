@@ -4,3 +4,32 @@
     font-size: 16px;
     color: #303846;
 }
+
+header {
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    background-color: white;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav a {
+    text-decoration: none;
+    margin-right: 1.1em;
+}
+main {
+    padding-top: 70px;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: auto;
+    padding-right: 1.1em;
+    padding-left: 10px;
+}
