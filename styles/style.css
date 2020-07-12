@@ -1,27 +1,28 @@
 /** CSS STYLE **/
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #303846;
 }
 
+
+/**Шапка лендинга**/
 header {
     position: fixed;
     width: 100%;
     font-weight: bold;
     background-color: white;
+    padding: 10px;
 }
-nav {
+header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-nav a {
+header nav a {
     text-decoration: none;
     margin-right: 1.1em;
-}
-main {
-    padding-top: 70px;
 }
 
 .flex-align-center {
@@ -32,4 +33,42 @@ main {
     margin-right: auto;
     padding-right: 1.1em;
     padding-left: 10px;
+}
+
+
+/**Основная часть контента**/
+main {
+    padding-top: 40px;
+}
+
+
+/**Баннер**/
+.banner {
+    text-align: center;
+    background: url(../images/banner.png) 66% no-repeat;
+    background-position-y: 66%;
+}
+.banner img {
+    padding: 10px;
+    margin-top: 20px;
+}
+.banner h1, .banner h2 {
+    color: white;
+}
+.banner h1 {
+    font-size: 2em;
+    padding: 2px;
+}
+.banner h2 {
+    font-size: 0.8em;
+
+}
+.banner button {
+    font-size: 0.8em;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 0.5px solid white;
 }
