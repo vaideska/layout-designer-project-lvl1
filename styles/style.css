@@ -1,6 +1,6 @@
 /** CSS STYLE **/
 * {
-    box-sizing: border-box;
+
     font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #303846;
@@ -45,8 +45,8 @@ main {
 /**Баннер**/
 .banner {
     text-align: center;
-    background: url(../images/banner.png) 66% no-repeat;
-    background-position-y: 66%;
+    background: url(../images/banner.png) 60% no-repeat;
+    background-position-y: 67%;
 }
 .banner img {
     padding: 10px;
@@ -56,19 +56,66 @@ main {
     color: white;
 }
 .banner h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 2px;
 }
-.banner h2 {
-    font-size: 0.8em;
-
-}
 .banner button {
-    font-size: 0.8em;
     margin: 20px;
     padding: 10px;
     color: white;
     background-color: transparent;
     border-radius: 4px;
     border: 0.5px solid white;
+}
+
+
+/**Секции**/
+section {
+    line-height: 140%;
+}
+section h2 {
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+section:nth-of-type(even) {
+    background-color: #f7f7f7;
+}
+
+
+/**Секция преимущества**/
+.advantages {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages div {
+    flex: 1 1;
+    padding: 60px 25px;
+}
+
+
+/**Секции про луну**/
+.info-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 1000px;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.left-content {
+    margin-right: 60px;
+}
+.info-block img {
+    width: 30%;
+    height: 15%;
+}
+.info-block p {
+    margin-bottom: 10px;
 }
