@@ -1,6 +1,5 @@
 /** CSS STYLE **/
 * {
-
     font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #303846;
@@ -148,6 +147,7 @@ fieldset {
     display: flex;
     flex-flow: column nowrap;
     padding-top: 15px;
+    padding-bottom: 60px;
 }
 .form-reserve div {
     display: flex;
@@ -167,4 +167,41 @@ select {
 .form-reserve .label {
     width: 50%;
     font-weight: bold;
+}
+.form-reserve button {
+    font-weight: bold;
+    color: rgb(9, 211, 172);
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(9, 211, 172);
+    padding: 10px 30px;
+}
+.form-reserve a {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/**Футер**/
+footer {
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #303846;
+    height: 180px;
+
+}
+.footer h3, .footer li, .footer p {
+    color: white;
+}
+.footer .copyright {
+    font-size: 0.7em;
+    color: #c7ccd3dc;
+    margin-top: 10px;
+}
+.footer ul {
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 15px;
+    list-style-type: disc;
 }
