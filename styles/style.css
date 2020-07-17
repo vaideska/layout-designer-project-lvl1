@@ -119,3 +119,52 @@ section:nth-of-type(even) {
 .info-block p {
     margin-bottom: 10px;
 }
+
+
+/**Форма обратной связи**/
+a + h2 {
+    text-align: center;
+    padding-top: 60px;
+}
+legend {
+    color: rgb(9, 211, 172);
+    font-weight: bold;
+}
+fieldset {
+    border-color: rgb(9, 211, 172);
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.params-form {
+    width: 400px;
+    height: 135px;
+}
+.contact-form {
+    width: 400px;
+    height: 170px;
+}
+.form-reserve {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 15px;
+}
+.form-reserve div {
+    display: flex;
+    padding-top: 10px;
+}
+input, select {
+    border: 1px solid #bfc5d1;
+    height: 30px;
+    border-radius: 4px;
+}
+input {
+    width: 180px;
+}
+select {
+    width: 140px;
+}
+.form-reserve .label {
+    width: 50%;
+    font-weight: bold;
+}
