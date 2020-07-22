@@ -176,7 +176,7 @@ select {
     border: 1px solid rgb(9, 211, 172);
     padding: 10px 30px;
 }
-.form-reserve a {
+.form-reserve .button {
     width: 400px;
     margin: 0 auto;
     margin-top: 20px;
