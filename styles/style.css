@@ -7,7 +7,7 @@
 
 
 /**Шапка лендинга**/
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,12 +16,12 @@ header {
     background-color: white;
     padding: 10px;
 }
-header nav {
+.header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-header nav a {
+.header nav a {
     text-decoration: none;
     margin-right: 1.1em;
 }
@@ -43,18 +43,25 @@ main {
 }
 
 
+/**Секции**/
+.section-content {
+    line-height: 150%;
+    max-width: 1000px;
+    margin: auto;
+}
+.background-grey {
+    background-color: #f7f7f7;
+}
+section h2 {
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
 /**Баннер**/
 .topic {
     text-align: center;
     background: url(../images/banner.png) 60% no-repeat;
     background-position-y: 68%;
-}
-section.topic {
-    height: 325px;
-}
-.topic div {
-    max-width: 1000px; 
-    margin: auto;
 }
 .topic img {
     padding: 10px;
@@ -71,8 +78,10 @@ section.topic {
 .topic h3 {
     margin-bottom: 25px;
 }
+.link-button {
+    padding-bottom: 25px;
+}
 .topic a {
-    margin: 20px;
     padding: 10px;
     color: white;
     background-color: transparent;
@@ -82,28 +91,11 @@ section.topic {
 }
 
 
-/**Секции**/
-section {
-    line-height: 140%;
-}
-section h2 {
-    font-size: 1.8em;
-    padding-bottom: 15px;
-}
-section:nth-of-type(even) {
-    background-color: #f7f7f7;
-}
-
-
 /**Секция преимущества**/
 .advantages {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .advantages div {
     flex: 1 1;
@@ -123,20 +115,18 @@ section:nth-of-type(even) {
     align-items: flex-start;
     justify-content: center;
 
-    max-width: 1000px;
-    margin: auto;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 .left-content {
-    margin-right: 60px;
+    margin-right: 175px;
 }
 .info-block img {
     width: 30%;
     height: 15%;
 }
 .info-block p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -155,13 +145,8 @@ fieldset {
     padding-left: 10px;
     padding-right: 10px;
 }
-.params-form {
+.form {
     width: 400px;
-    height: 135px;
-}
-.contact-form {
-    width: 400px;
-    height: 170px;
 }
 .form-reserve {
     display: flex;
@@ -172,6 +157,12 @@ fieldset {
 .form-reserve div {
     display: flex;
     padding-top: 10px;
+}
+.form-reserve .first-field {
+    padding-top: 20px;
+}
+.form div:nth-last-child(1) {
+    padding-bottom: 20px;
 }
 input, select {
     border: 1px solid #bfc5d1;
@@ -203,12 +194,11 @@ select {
 }
 
 /**Футер**/
-footer {
-    align-items: baseline;
+.footer {
     justify-content: space-around;
     background-color: #303846;
-    height: 180px;
-
+    padding-top: 50px;
+    padding-bottom: 55px;
 }
 .footer h3, .footer li, .footer p {
     color: white;

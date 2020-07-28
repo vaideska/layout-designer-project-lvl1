@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="flex-align-center">
             <img src="images/logo.svg" alt="logo" width="30" height="30"><p class="logo">Лунное море</p>
             <nav>
@@ -21,16 +21,16 @@
     </header>
     <main>
         <section class="topic">
-            <div>
+            <div class="section-content">
                 <img src="images/logo.svg" alt="logo" width="140" height="140">
                 <h1>ЖК «Лунное море»</h1>
                 <h3>Место, откуда не хочется улетать</h3>
-                <a href="#reserve">Забронировать</a>
+                <div class="link-button"><a href="#reserve">Забронировать</a></div>
             </div>
         </section>
         <section>
             <a id="advantages"></a>
-            <div class="advantages">
+            <div class="advantages section-content">
                 <div>
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -45,19 +45,20 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="background-grey">
             <a id="moon-1"></a>
-            <div class="info-block">
+            <div class="info-block section-content">
                 <div class="left-content">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
+                    <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
                 <img src="images/moon-1.jpg" alt="moon">
             </div>
         </section>
         <section>
             <a id="moon-2"></a>
-            <div class="info-block">
+            <div class="info-block section-content">
                 <img src="images/moon-2.jpg" alt="moon" class="left-content">
                 <div>
                     <h2>Места для отдыха</h2>
@@ -66,58 +67,62 @@
                 </div>
             </div>
         </section>
-        <section>
-            <a id="reserve"></a>
-            <h2>Оставьте заявку сегодня!</h2>
-            <form class="form-reserve">
-                <fieldset class="params-form">
-                    <legend>Параметры квартиры</legend>
-                    <div>
-                        <label class="label">Количество комнат:</label>
-                        <select><option>1</option><option>2</option><option>Больше</option></select>
-                    </div>
-                    <div>
-                        <label class="label">Отделка:</label>
-                        <select><option>Без отделки</option><option>С отделкой</option><option>Частично</option></select>
-                    </div>
-                </fieldset>
-                <fieldset class="contact-form">
-                    <legend>Контактная информация</legend>
-                    <div>
-                        <label class="label">Имя:</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label class="label">Телефон:</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <label class="label">E-mail:</label>
-                        <input type="text">
-                    </div>
-                </fieldset>
-                <div class="button"><button>Отправить</button></div>
-            </form>
+        <section class="background-grey">
+            <div class="max-width">
+                <a id="reserve"></a>
+                <h2>Оставьте заявку сегодня!</h2>
+                <form class="form-reserve">
+                    <fieldset class="form">
+                        <legend>Параметры квартиры</legend>
+                        <div class="first-field">
+                            <label class="label">Количество комнат:</label>
+                            <select><option>1</option><option>2</option><option>Больше</option></select>
+                        </div>
+                        <div>
+                            <label class="label">Отделка:</label>
+                            <select><option>Без отделки</option><option>С отделкой</option><option>Частично</option></select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form">
+                        <legend>Контактная информация</legend>
+                        <div class="first-field">
+                            <label class="label">Имя:</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label class="label">Телефон:</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label class="label">E-mail:</label>
+                            <input type="text">
+                        </div>
+                    </fieldset>
+                    <div class="button"><button>Отправить</button></div>
+                </form>
+            </div>
         </section>
     </main>
-    <footer class="footer flex-align-center">
-        <div>
-            <div class="flex-align-center"><img src="images/logo.svg" alt="logo" width="30" height="30"><p class="logo">Лунное море</p></div>
-            <p class="copyright">&copy; 2032 год</p>
-        </div>
-        <div>
-            <h3>Проектная документация</h3>
-            <ul>
-                <li>Скачать</li>
-                <li>Посмотреть на сайте</li>
-            </ul>
-        </div>
-        <div>
-            <h3>О застройщие</h3>
-            <ul>
-                <li>Отзывы</li>
-                <li>Сайт компании</li>
-            </ul>
+    <footer>
+        <div class="footer flex-align-center">
+            <div>
+                <div class="flex-align-center"><img src="images/logo.svg" alt="logo" width="30" height="30"><p class="logo">Лунное море</p></div>
+                <p class="copyright">&copy; 2032 год</p>
+            </div>
+            <div>
+                <h3>Проектная документация</h3>
+                <ul>
+                    <li>Скачать</li>
+                    <li>Посмотреть на сайте</li>
+                </ul>
+            </div>
+            <div>
+                <h3>О застройщие</h3>
+                <ul>
+                    <li>Отзывы</li>
+                    <li>Сайт компании</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
