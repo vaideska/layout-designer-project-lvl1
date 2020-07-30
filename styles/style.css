@@ -5,6 +5,9 @@
 --header-height: 50px;
 --color-font: #303846;
 --color-form: rgb(9, 211, 172);
+--color-light: white;
+--color-section: #f7f7f7;
+--color-light-grey: #c7ccd3dc;
 }
 
 
@@ -21,10 +24,6 @@ body {
     width: 130px;
 	padding: 10px;
 }
-.pad-top-bot-60 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
 
 /**Шапка лендинга**/
@@ -39,15 +38,15 @@ body {
     width: 100%;
     height: var(--header-height);
     font-weight: bold;
-    background-color: white;
+    background-color: var(--color-light);
     padding: 10px;
 }
-.header nav {
+.navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-.header nav a {
+.navigation a {
     text-decoration: none;
     color: var(--color-font);
     margin-right: 1.1em;
@@ -68,11 +67,13 @@ main {
 /**Секции**/
 .section-content {
     line-height: 150%;
+    padding-top: 60px;
+    padding-bottom: 60px;
     max-width: 1000px;
     margin: auto;
 }
-.background-grey {
-    background-color: #f7f7f7;
+.background-section {
+    background-color: var(--color-section);
 }
 section h2 {
     font-size: 1.8em;
@@ -80,6 +81,7 @@ section h2 {
 }
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -89,12 +91,16 @@ section h2 {
     background: url(../images/banner.png) 60% no-repeat;
     background-position-y: 68%;
 }
+.topic .section-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 .topic img {
     padding: 10px;
     margin-top: 20px;
 }
 .topic h1, .topic h2 {
-    color: white;
+    color: var(--color-light);
     line-height: 100%;
 }
 .topic h1 {
@@ -108,31 +114,34 @@ section h2 {
 .pad-bottom-25 {
     padding-bottom: 25px;
 }
-.btn-a {
-    color: white;
+.btn-white {
+    color: var(--color-light);
     border-width: 0.5px;
-    border-color: white;
+    border-color: var(--color-light);
     text-decoration: none;
 }
 
 
 /**Секция преимущества**/
-.advantages div {
-    flex: 1 1;
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-wrap h2, .flex-wrap p {
+    width: 33%;
     padding-left: 50px;
 }
-.advantages div:nth-child(1) {
+.flex-wrap .pad-left-0 {
     padding-left: 0;
 }
 
 
 /**Секции про луну**/
-.left-content {
-    margin-right: 175px;
-}
 .info-block-img {
     width: 30%;
     height: 15%;
+}
+.width-50-percent {
+    width: 50%;
 }
 
 
@@ -144,14 +153,12 @@ legend {
     color: var(--color-form);
     font-weight: bold;
 }
-fieldset {
+.form-block {
     border-color: var(--color-form);
+    width: 400px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-}
-.form-width {
-    width: 400px;
 }
 .form-reserve {
     display: flex;
@@ -161,14 +168,14 @@ fieldset {
     display: flex;
     padding-top: 10px;
 }
-.form-reserve .first-field {
+.form-reserve .pad-top-20 {
     padding-top: 20px;
 }
-.form-reserve div:nth-last-child(1) {
+.form-reserve .pad-bot-20 {
     padding-bottom: 20px;
 }
 input, select {
-    border: 1px solid #bfc5d1;
+    border: 1px solid var(--color-light-grey);
     height: 30px;
     border-radius: 4px;
 }
@@ -187,7 +194,7 @@ input, select {
     margin: 0 auto;
     margin-top: 20px;
 }
-.btn-form {
+.btn-green {
     font-weight: bold;
     color: var(--color-form);
     border-width: 1px;
@@ -203,13 +210,15 @@ input, select {
 .footer {
     justify-content: space-around;
     background-color: var(--color-font);
+    padding-top: 50px;
+    padding-bottom: 55px;
 }
 .footer h3, .footer li, .footer p {
-    color: white;
+    color: var(--color-light);
 }
 .footer .copyright {
     font-size: 0.7em;
-    color: #c7ccd3dc;
+    color: var(--color-light-grey);
     margin-top: 10px;
 }
 .footer ul {
