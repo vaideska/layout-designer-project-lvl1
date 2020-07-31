@@ -3,11 +3,11 @@
 /**Переменные**/
 :root {
 --header-height: 50px;
---color-font: #303846;
---color-form: rgb(9, 211, 172);
+--color-dark: #303846;
 --color-light: white;
---color-section: #f7f7f7;
---color-light-grey: #c7ccd3dc;
+--colored: rgb(9, 211, 172);
+--color-light-grey: #f7f7f7;
+--color-grey: #c7ccd3dc;
 }
 
 
@@ -15,7 +15,7 @@
 body {
     font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    color: var(--color-font);
+    color: var(--color-dark);
 }
 .btn {
 	background-color: transparent;
@@ -45,14 +45,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-left: auto;
 }
 .navigation a {
     text-decoration: none;
-    color: var(--color-font);
+    color: var(--color-dark);
     margin-right: 1.1em;
 }
 .logo {
-    margin-right: auto;
     padding-right: 1.1em;
     padding-left: 10px;
 }
@@ -72,8 +72,8 @@ main {
     max-width: 1000px;
     margin: auto;
 }
-.background-section {
-    background-color: var(--color-section);
+.background-gray {
+    background-color: var(--color-light-grey);
 }
 section h2 {
     font-size: 1.8em;
@@ -123,14 +123,11 @@ section h2 {
 
 
 /**Секция преимущества**/
-.flex-wrap {
-    flex-wrap: wrap;
-}
-.flex-wrap h2, .flex-wrap p {
+.advantages div {
     width: 33%;
     padding-left: 50px;
 }
-.flex-wrap .pad-left-0 {
+.advantages .pad-left-0 {
     padding-left: 0;
 }
 
@@ -150,11 +147,11 @@ form h2 {
     text-align: center;
 }
 legend {
-    color: var(--color-form);
+    color: var(--colored);
     font-weight: bold;
 }
 .form-block {
-    border-color: var(--color-form);
+    border-color: var(--colored);
     width: 400px;
     margin: 0 auto;
     padding-left: 10px;
@@ -175,7 +172,7 @@ legend {
     padding-bottom: 20px;
 }
 input, select {
-    border: 1px solid var(--color-light-grey);
+    border: 1px solid var(--color-grey);
     height: 30px;
     border-radius: 4px;
 }
@@ -196,9 +193,9 @@ input, select {
 }
 .btn-green {
     font-weight: bold;
-    color: var(--color-form);
+    color: var(--colored);
     border-width: 1px;
-    border-color: var(--color-form);
+    border-color: var(--colored);
 }
 
 
@@ -209,16 +206,16 @@ input, select {
 }
 .footer {
     justify-content: space-around;
-    background-color: var(--color-font);
+    background-color: var(--color-dark);
     padding-top: 50px;
     padding-bottom: 55px;
 }
-.footer h3, .footer li, .footer p {
+.footer h1, .footer li, .footer p {
     color: var(--color-light);
 }
 .footer .copyright {
     font-size: 0.7em;
-    color: var(--color-light-grey);
+    color: var(--color-grey);
     margin-top: 10px;
 }
 .footer ul {
