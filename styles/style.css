@@ -210,7 +210,7 @@ input, select {
     padding-top: 50px;
     padding-bottom: 55px;
 }
-.footer h1, .footer li, .footer p {
+.footer h2, .footer li, .footer p {
     color: var(--color-light);
 }
 .footer .copyright {
